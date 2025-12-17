@@ -1,0 +1,23 @@
+---
+title: "BMW Car Price Analysis & Prediction"
+subtitle: "INFO 523: Data Mining and Discovery"
+author: 
+  - name: "Min Set Khant"
+    affiliations:
+      - name: "College of Information Science, University of Arizona"
+description: "Analyze, visualize, and predict BMW car prices using multi-regional sales data from 2010–2024, exploring how features such as model, region, engine size, and transmission influence market value and sales performance."
+format:
+   html:
+    code-tools: true
+    code-overflow: wrap
+    embed-resources: true
+editor: visual
+execute:
+  warning: false
+  echo: false
+jupyter: python3
+---
+
+## Abstract
+
+This project focuses on analyzing worldwide BMW car sales data from 2010 to 2024 to understand the complex factors that determine a vehicle's market value. We conduct extensive Exploratory Data Analysis (EDA) to identify key price drivers, including mileage, engine size, car age, and regional sales trends. The core of the project involves building a robust machine learning model (Random Forest Regressor) to accurately predict car prices. Crucially, the model's performance is validated using a temporal train-test split, simulating a real-world scenario where the model predicts 2024 prices based on data up to 2023. The final model achieves a strong temporal stability with a Mean Absolute Error (MAE) of approximately \$531.13, providing high-confidence insights for pricing and inventory optimization strategies.
