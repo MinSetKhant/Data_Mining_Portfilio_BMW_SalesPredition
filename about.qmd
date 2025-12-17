@@ -1,0 +1,10 @@
+---
+title: "BMW Car Price Analysis & Prediction"
+format: html
+editor: visual
+jupyter: python3
+---
+
+This project was developed by **\[Min Set Khant (Solo)\]** For [INFO 523 - Data Mining and Discovery](https://datamineaz.org/) at the University of Arizona, taught by Dr. John Chen. The team is comprised of the following team members.
+
+-   Team member 1: Min Set Khant (Solo Project) , Master Student of University of Arizona
