@@ -1,0 +1,115 @@
+---
+title: "INFO-523-DATA MININIG_Final Project '**BMW Car Price Analysis & Prediction (Project Proposal)**'"
+subtitle: "Proposal"
+author: 
+  - name: "Team Name - Min Set Khant (Solo)"
+    affiliations:
+      - name: "College of Information Science, University of Arizona"
+description: "Proposal to analyze, visualize, and predict BMW car prices (2010–2024) to explore the temporal stability of market value as influenced by model, region, engine size, and transmission.."
+format:
+  html:
+    code-tools: true
+    code-overflow: wrap
+    code-line-numbers: true
+    embed-resources: true
+editor: visual
+code-annotations: hover
+execute:
+  warning: false
+jupyter: python3
+---
+
+```{python}
+#| label: load-pkgs
+#| message: false
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+```
+
+## Dataset
+
+```{python}
+#| label: load-dataset
+#| message: false
+data = pd.read_csv("data/bmw_worldwide_sales.csv")
+data.head(10)
+```
+
+## Dataset Overview
+
+```{python,  label= dataset-summary,message =false,echo= false }
+data.describe()
+data.shape
+```
+
+This dataset — BMW Worldwide Sales Records (2010–2024) — contains over 50,000 records of BMW’s sales and specifications across multiple regions. Key features include: Model, Year, Engine_Size_L, Transmission, Fuel_Type, Color, Region, Price, and Sales_Volume. This dataset was chosen because it provides a diverse range of attributes for exploring market behavior, pricing trends, and customer preferences in the automotive industry.
+
+## Questions
+
+1.  What are the key factors influencing BMW used-car prices in the market?
+2.  Can machine learning models accurately predict used-car prices?
+3.  How stable are these predictions over time?
+4.  Using a temporal split, how well can the model predict pricing trends for “next year”?
+
+## Analysis Plan
+
+1.  Data Cleaning & Preparation
+
+Handle missing values
+
+Standardize numerical units
+
+Encode categorical variables
+
+Ensure time-related variables are aligned for temporal analysis
+
+2.  Exploratory Data Analysis (EDA)
+
+Price trends by year, region, and model
+
+Correlation analysis between price and vehicle attributes
+
+Identify patterns that may indicate shifting market preferences
+
+3.  Modeling Approach
+
+Apply Machine Learning Models:
+
+Linear Regression
+
+Decision Tree Regression
+
+Random Forest Regression
+
+Evaluate using:
+
+RMSE, MAE, R²
+
+Perform:
+
+Feature importance analysis
+
+Temporal train–test split to simulate predicting next-year price trends
+
+4.  Visualization Dashboard
+
+Build clear, interactive visualizations using matplotlib / seaborn
+
+Include:
+
+Price distribution
+
+Trend lines across years
+
+Model performance summary
+
+Visualization Dashboard:
+
+-   Build clear, interactive plots for trends and insights using matplotlib and seaborn.
+
+Ethical AI Use Disclosure:
+
+-   AI tools (e.g., ChatGPT) were used ethically for code debugging, idea exploration, and documentation enhancement.
+-   All datasets are real and sourced from Kaggle.
